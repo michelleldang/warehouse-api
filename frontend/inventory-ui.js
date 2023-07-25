@@ -36,7 +36,7 @@ function addNewItem() {
 
 function increaseItemCount() {
   const itemName = document.querySelector('#change-item-name').value
-  fetch('http://localhost:3000/inventory/'+itemName, {
+  fetch('http://localhost:3000/inventory/change', {
     method: 'PUT',
     body: JSON.stringify({
       name: itemName,
@@ -52,7 +52,7 @@ function increaseItemCount() {
 
 function decreaseItemCount() {
   const itemName = document.querySelector('#change-item-name').value
-  fetch('http://localhost:3000/inventory/'+itemName, {
+  fetch('http://localhost:3000/inventory/change', {
     method: 'PUT',
     body: JSON.stringify({
       name: itemName,
